@@ -7,6 +7,16 @@ Table of Contents:
     3. Areas
     4. Media Queries
 ////////////////////////////////////////////////////////////////////////*/
+/*BASIS INSTELLING*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
 
 /*////////////////////////
     1. Global Styles
@@ -14,22 +24,59 @@ Table of Contents:
 
 body {
     font-family: 'Dosis', sans-serif;
+    background-color: #F9C48B;
+    color: #260803;
     font-weight: 400;
 }
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+h2 {
+    margin:  0 0 1rem 0;
+}
 
-
+p {
+    margin: 1rem 0;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
-
-
-
+.element {
+    background-color: #fdefec;
+    box-shadow: 0 .0600rem .15rem rgba(0, 0, 0, 0.20);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 1rem;
+}
+img {
+    width: 100%
+}
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+@media screen and (min-width: 768px) {
+    /* voor gewone schermen */
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        background-color: #F69051;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* voor groter schermen */
+    html {
+        font-size: 20px;
+    }
+
+    body {
+        background-color: #F26D40;
+    }
+
+}
